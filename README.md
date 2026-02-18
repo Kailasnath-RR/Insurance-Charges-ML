@@ -14,4 +14,35 @@ Dataset source: [Prediction of Insurance Charges using Age & Gender](https://www
 - Age shows a moderate positive correlation with insurance costs
 - BMI has a moderate influence on charges
 - Number of children has minimal impact on insurance cost
+### Key ML concepts demonstrated:
+- Exploratory Data Analysis (EDA)
+- Feature preprocessing using ColumnTransformer
+- Pipeline implementation
+- OneHotEncoding categorical variables
+- Hyperparameter tuning
+- Cross-validation
+- Model evaluation and comparison
+
+## Final Model Summary
+
+Two regression models were trained and evaluated to predict insurance charges:
+
+Models tested:
+- Decision Tree Regressor
+- Random Forest Regressor
+
+Hyperparameter tuning was performed using:
+>max_leaf_nodes
+
+Best model:
+> Random Forest Regressor (max_leaf_nodes=30)
+
+Performance:
+> Mean Absolute Error (MAE): 2503.61
+
+ Cross-validation results confirmed that Random Forest provided more stable and reliable predictions compared to Decision Tree.
+
+### Conclusion:
 -----
+Random Forest Regressor was selected as the final model due to its lower error and better generalization performance.
+
